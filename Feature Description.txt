@@ -1,0 +1,95 @@
+📌 1. Loan Identification
+
+id → Unique identifier for each loan.
+
+member_id → Borrower identifier (links loans to borrowers).
+
+📌 2. Loan Request & Funding
+
+loan_amnt → The total loan amount requested.
+
+funded_amnt → The amount actually funded.
+
+funded_amnt_inv → Portion of the loan funded by investors.
+
+📌 3. Loan Terms & Rates
+
+term → Length of the loan (e.g., 36 months, 60 months).
+
+int_rate → Interest rate assigned.
+
+installment → Fixed monthly repayment amount.
+
+grade / sub_grade → Credit risk grades assigned by platform (A–G with subgrades).
+
+📌 4. Borrower Credit Profile
+
+emp_title → Borrower’s job title.
+
+emp_length → Years employed (e.g., < 1 year, 10+ years).
+
+home_ownership → (Own, Rent, Mortgage).
+
+annual_inc → Annual income.
+
+verification_status → Whether income is verified.
+
+dti → Debt-to-income ratio.
+
+📌 5. Loan Status & Performance
+
+loan_status → Current state of the loan (Fully Paid, Charged Off, Current, Late).
+
+issue_d → Date the loan was issued.
+
+last_pymnt_d → Date of last payment.
+
+last_pymnt_amnt → Last payment amount.
+
+total_pymnt / total_pymnt_inv → Total payment received (from borrower/investors).
+
+recoveries → Amount recovered after default.
+
+collection_recovery_fee → Fees charged during recovery.
+
+📌 6. Credit History Variables
+
+open_acc → Number of open credit lines.
+
+pub_rec → Number of derogatory public records.
+
+revol_bal → Revolving credit balance.
+
+revol_util → Revolving credit utilization rate (%).
+
+total_acc → Total number of credit lines.
+
+earliest_cr_line → Date of borrower’s earliest credit line.
+
+📌 7. Application & Verification
+
+application_type → Individual or joint application.
+
+verification_status_joint → For joint applications.
+
+annual_inc_joint → Joint income.
+
+📌 8. Location & Demographics
+
+addr_state → Borrower’s state.
+
+zip_code → Borrower’s area code.
+
+purpose → Reason for loan (credit card, small business, debt consolidation, etc.).
+
+title → Borrower-provided loan title.
+
+📌 9. Derived / Engineered Features (for ML)
+
+default_flag → Binary: Did borrower default?
+
+roi / irr → Investor returns.
+
+credit_utilization_score → Derived from revol_util & dti.
+
+risk_score → Credit risk scoring.
