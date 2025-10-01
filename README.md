@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Financial institutions face significant challenges in assessing loan applicants’ creditworthiness. The ability to predict defaults and repayment behavior is critical for risk management, profitability, and compliance. This project leverages modern data platforms such as Google BigQuery and Databricks Unity Catalog to build a scalable pipeline for credit risk analysis. By applying data preprocessing, feature engineering, and advanced analytics, we aim to extract insights that improve decision-making in lending.
+Financial institutions face significant challenges in assessing loan applicants’ creditworthiness. The ability to predict defaults and repayment behavior is critical for risk management, profitability, and compliance. This project leverages modern data platforms such as Google BigQuery and Databricks to build a scalable pipeline for credit risk analysis. By applying data preprocessing, feature engineering, and advanced analytics, the aim is to extract insights that improve decision-making in lending.
 
 ## Data Overview
 
